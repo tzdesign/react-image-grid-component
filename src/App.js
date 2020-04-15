@@ -22,10 +22,11 @@ const images = Array.from(new Array(randomNumber(10, 30))).map(
 function App() {
   return (
     <div className="App">
-      <ImageGrid random>
-        {images.map((url) => (
-          <img key={url} src={url} alt="keine ahnung" />
-        ))}
+      <ImageGrid>
+        <img
+          src="https://via.placeholder.com/400x379/7685AB/fff"
+          alt="some image"
+        />
       </ImageGrid>
     </div>
   );
